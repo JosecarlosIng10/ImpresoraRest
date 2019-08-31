@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import mongoengine
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'impresoraRest.appname',
     'rest_framework',
-    'rest_framework_mongoengine',
 ]
 
 MIDDLEWARE = [
@@ -81,9 +79,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'Prueba',
+        'HOST': 'localhost',
     }
 }
-mongoengine.connect('Prueba', host='localhost:27017')
+
+
 
 
 # Password validation

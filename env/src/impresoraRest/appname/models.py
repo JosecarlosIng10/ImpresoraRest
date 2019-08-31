@@ -1,9 +1,6 @@
-from mongoengine import Document, EmbeddedDocument, fields
+from djongo  import models
  
-class ToolInput(EmbeddedDocument):
-    name = fields.StringField(required=True)
-    value = fields.DynamicField(required=True)
  
-class Tool(Document):
-    label = fields.StringField()
-    description = fields.StringField()
+class Tool(models.Model):
+    label = models.TextField()
+    description = models.TextField()

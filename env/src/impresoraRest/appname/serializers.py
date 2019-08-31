@@ -1,10 +1,8 @@
-from rest_framework  import serializers
 from impresoraRest.appname.models import Tool
+from rest_framework import serializers
  
-class ToolSerializer(serializers.Serializer):
+class ToolSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Tool
         fields = '__all__'
     
-    def create(self, validated_data):
-        return Tool.objects.create(**validated_data)
