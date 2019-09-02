@@ -25,7 +25,7 @@ SECRET_KEY = '&t3xztj2qqu1ld)-e8c#xqkbi=gkfg-pfj#$@icdeka1x1y&i2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jestrada10.pythonanywhere.com']
+ALLOWED_HOSTS = ['jestrada10.pythonanywhere.com', 'localhost']
 
 
 # Application definition
