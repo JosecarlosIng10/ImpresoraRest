@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Tool
+from .models import PrintController
 
-admin.site.register(Tool)
+admin.site.register(PrintController)
 # Register your models here.

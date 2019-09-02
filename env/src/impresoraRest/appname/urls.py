@@ -5,7 +5,7 @@ from impresoraRest.appname.views import ToolViewSet
 
 
 merouter = merouters.DefaultRouter()
-merouter.register(r'mongo', ToolViewSet)
+merouter.register(r'print', ToolViewSet)
  
 urlpatterns = []
  

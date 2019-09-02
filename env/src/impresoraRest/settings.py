@@ -78,8 +78,11 @@ WSGI_APPLICATION = 'impresoraRest.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'Prueba',
-        'HOST': 'localhost',
+        'NAME': 'Prints',
+        'HOST': 'mongodb+srv://admin:<password>@cluster0-i9nzs.mongodb.net/test?retryWrites=true&w=majority',
+        'USER': 'admin',
+        'PASSWORD': 'grupo13database',
+        
     }
 }
 
