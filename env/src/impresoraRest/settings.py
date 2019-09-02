@@ -25,7 +25,7 @@ SECRET_KEY = '&t3xztj2qqu1ld)-e8c#xqkbi=gkfg-pfj#$@icdeka1x1y&i2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['jestrada10.pythonanywhere.com']
 
 
 # Application definition
@@ -75,14 +75,16 @@ WSGI_APPLICATION = 'impresoraRest.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'Prints',
-        'HOST': 'mongodb+srv://admin:<password>@cluster0-i9nzs.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'admin',
-        'PASSWORD': 'grupo13database',
-        
+        'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'printcontroller.db',                      # Or path to database file if using sqlite3.
+        # The following settings are not used with sqlite3:
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
+        'PORT': '',                      # Set to empty string for default.
     }
 }
 
@@ -126,3 +128,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = '/home/Jestrada10/ImpresoraRest/env/src/static'
